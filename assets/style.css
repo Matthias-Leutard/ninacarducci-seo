@@ -431,3 +431,11 @@ textarea:focus-visible {
     background-color: #FFFFFF;
     opacity: 1;
 }
+.carousel-indicators {
+    background-color: #000000 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #FFFFFF !important;
+    opacity: 1 !important;
+}
