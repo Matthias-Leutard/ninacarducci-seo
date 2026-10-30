@@ -40,6 +40,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: auto;
 }
 
 #about {
@@ -69,7 +70,12 @@ body {
 
 .picture img {
 	width: 100%;
+	height: auto;
 
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
 }
 #about-me {
 	flex: 2
@@ -87,9 +93,15 @@ body {
 	width: 60%;
 	margin-bottom: 0.5em;
 }
+
 #about-me p {
 	width: 80%;
 	font-size: 14px;
+
+	&.-first {
+		width: 60%;
+		font-size: 16px;
+	}
 }
 
 #gallery {
@@ -365,3 +377,44 @@ input[type="submit"] {
 	}
 }
 
+
+/* Améliorations d'accessibilité : contraste des textes */
+
+/* Liens de navigation */
+.nav a {
+    color: #000000;
+}
+
+/* Liens des filtres de galerie */
+.nav-pills .nav-link {
+    color: #292929;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #292929;
+    background-color: #BEB45A;
+}
+
+/* Bouton d'envoi du formulaire */
+input[type="submit"] {
+    color: #000000;
+    background-color: #BEB45A;
+    border: 1px solid #292929;
+}
+
+/* Champs de formulaire */
+form input,
+form textarea {
+    color: #000000;
+    border-color: #292929;
+}
+
+/* Améliore la visibilité du focus clavier */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #292929;
+    outline-offset: 3px;
+}
