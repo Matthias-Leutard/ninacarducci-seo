@@ -418,24 +418,3 @@ textarea:focus-visible {
     outline: 3px solid #292929;
     outline-offset: 3px;
 }
-/* Amélioration du contraste des indicateurs du carrousel */
-.carousel-indicators {
-    background-color: #292929;
-    width: fit-content;
-    margin-inline: auto;
-    padding: 8px 12px;
-    border-radius: 20px;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #FFFFFF;
-    opacity: 1;
-}
-.carousel-indicators {
-    background-color: #000000 !important;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #FFFFFF !important;
-    opacity: 1 !important;
-}
